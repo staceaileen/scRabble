@@ -1,11 +1,11 @@
 Package: scRabble
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Scrabble Generator
 Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
+Author: Stacy and Aaron <stacykam@mail.usf.edu>
+Maintainer: Stacy and Aaron <aaronsb@princeton.edu>
+Description: Feed a random string of letters and get back words, their length, combos and whatnots. 
+License: MIT
 Encoding: UTF-8
 LazyData: true
+RoxygenNote: 6.0.1
