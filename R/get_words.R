@@ -9,8 +9,8 @@
 #'
 #' @examples
 #' get_words("uhwoih")
-#' get_words("ihfjwd", word_len = 4)
-#' get_words("hasfic", wildcard = TRUE)
+#' get_words("ihfjwd", 4)
+#' get_words("hasfic", 4, TRUE)
 #' @import stringr str_c
 #' @import rvest
 #' @import dplyr
