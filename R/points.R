@@ -37,4 +37,5 @@ points <- function(word, point.mult = rep(1, nchar(word)), dw = 0, tw = 0) {
     multiple <- multiple2 * multiple3
   }
   score <- before_multiple * multiple
+  return(score)
 }
