@@ -13,8 +13,6 @@
 #' points("botch", c(1,2,1,2,1), dw = 2)
 #' @import dplyr
 points <- function(word, point.mult = rep(1, nchar(word)), dw = 0, tw = 0) {
-  print(nchar(word))
-  print(length(point.mult))
   if (length(point.mult) != nchar(word)) {
     stop("Length of multiples must equal length of word.")
   }

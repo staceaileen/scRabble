@@ -11,7 +11,6 @@
 #' get_words("uhwoih")
 #' get_words("ihfjwd", 4)
 #' get_words("hasfic", 4, TRUE)
-#' @import stringr str_c
 #' @import rvest
 #' @import dplyr
 #' @import xml2
@@ -19,9 +18,9 @@
 get_words <- function(letters, word_len = 0, wildcard = FALSE){
 
   if(wildcard == TRUE){
-    link = link = stringr::str_c("https://word.tips/words-for/", letters, "*?is_search=true")
+    link = link = paste0("https://word.tips/words-for/", letters, "*?is_search=true")
   } else {
-    link = stringr::str_c("https://word.tips/words-for/", letters, "?is_search=true")
+    link = paste0("https://word.tips/words-for/", letters, "?is_search=true")
   }
 
   html <- xml2::read_html(link)

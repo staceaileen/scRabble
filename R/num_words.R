@@ -11,6 +11,10 @@
 #' get_words("uhwoih")
 #' get_words("ihfjwd", word_len = 4)
 #' get_words("hasfic", wildcard = TRUE)
+#' @import stringr
+#' @import rvest
+#' @import dplyr
+#' @import xml2
 
 num_words <- function(letters, word_len = 0, wildcard = FALSE){
   words <- get_words(letters, word_len, wildcard)

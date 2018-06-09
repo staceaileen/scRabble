@@ -8,13 +8,12 @@
 #' @examples
 #' is_word("hello")
 #' is_word("hbkjwfen")
-#' @import stringr str_c
 #' @import rvest
 #' @import dplyr
 #' @import xml2
 
 is_word <- function(word){
-  link = stringr::str_c("https://www.merriam-webster.com/dictionary/", word)
+  link = paste0("https://www.merriam-webster.com/dictionary/", word)
 
   xpath_wrong = '//*[contains(concat( " ", @class, " " ), concat( " ", "secondary", " " ))]'
   xpath_cor = '//*[contains(concat( " ", @class, " " ), concat( " ", "hword", " " ))]'
