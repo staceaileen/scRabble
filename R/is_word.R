@@ -1,4 +1,4 @@
-#' Is Word
+#' Determines if a string of characters is a word.
 #'
 #' @param word string of letter
 #'

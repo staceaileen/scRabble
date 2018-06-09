@@ -1,4 +1,4 @@
-#' Number of words
+#' Returns the number of possible words from a set of letters
 #'
 #' @param letters string of characters to build words
 #' @param word_len if desired, length of words to be returned
