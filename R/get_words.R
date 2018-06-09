@@ -27,7 +27,8 @@ get_words <- function(letters, word_len = 0, wildcard = FALSE){
   html <- rvest::html_nodes(html, xpath = '//*[contains(concat( " ", @class, " " ), concat( " ", "changeable-word", " " ))]')
   html <- rvest::html_text(html)
   if (identical(html,character(0))) {
-    stop("No words :(")
+    print("No words :(")
+    return()
   }
   if(word_len == 0) {return(html)} else{
     condition <- sapply(html, function(x) nchar(x) == word_len)
