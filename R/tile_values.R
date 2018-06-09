@@ -28,7 +28,7 @@ if (FALSE) {
   25  y 4
   26  z 10
   27  ? 0
-                            ")
+          ")
+   devtools:: use_data(tile_values, overwrite = TRUE)
 }
 
-devtools:: use_data(tile_values, overwrite = TRUE)
