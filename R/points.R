@@ -1,8 +1,7 @@
 #' Copmutes the number of points in a scrabble word.
 #'
 #' @param word # string of letters
-#' @param locations # list of special letter score tile locations within the word
-#' @param multiples # double or tripple letter score corrosponding to letter index
+#' @param point.mult # list of numbers indicating position followed by multiplier
 #' @param dw # number of double word scores
 #' @param tw # number of tripple word scores
 #'
