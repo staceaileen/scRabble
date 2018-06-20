@@ -20,8 +20,8 @@ is_word <- function(word){
   html <- "notaword"
   try(html <- xml2::read_html(link))
   if(html == "notaword"){
-    return FALSE
+    return (FALSE)
   } else{
-    return TRUE
+    return (TRUE)
   }
 }
